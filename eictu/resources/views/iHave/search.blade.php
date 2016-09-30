@@ -30,7 +30,7 @@ eICTuStudentGoodsSearch - Danh sách đồ cũ đang rao
             <ul type="none">
               <li style="float: left;padding-right: 10px;"><img @if($item->avatar!=null) src="{{$item->avatar}}" @else src="{{url('img/avatar_null.png')}}" @endif height="50px" width="50px"/></li>
               <li>
-                <ul type="none">
+                <ul type="none" style="padding:0px;">
                   <li>{{$item->name}}</li>
                   <li>{{str_limit($item->content,100,'...')}}</li>
                 </ul>
